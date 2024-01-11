@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Arma extends Model
 {
+    use HasFactory;
     protected $table = 'armas'; 
-    
+
     public function personagens()
     {
         return $this->hasMany(Personagem::class);

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mochila extends Model
 {
+    use HasFactory;
     protected $table = 'mochilas';
 
     public function personagem()

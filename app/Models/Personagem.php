@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Personagem extends Model
 {
-    use HasFactory;
+    
     protected $table = "personagens";
 
     // Relacionamento com a arma primária

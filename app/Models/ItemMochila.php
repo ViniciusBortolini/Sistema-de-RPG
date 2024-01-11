@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ItemMochila extends Model
 {
+    use HasFactory;
     protected $table = 'itens_mochila';
 
     public function mochila()
