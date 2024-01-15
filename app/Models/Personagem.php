@@ -13,13 +13,13 @@ class Personagem extends Model
     // Relacionamento com a arma primária
     public function armaPrimaria()
     {
-        return $this->belongsTo(Arma::class, 'arma_primaria_id');
+        return $this->belongsTo(Arma::class, 'id_arma_primaria');
     }
 
     // Relacionamento com a arma secundária
     public function armaSecundaria()
     {
-        return $this->belongsTo(Arma::class, 'arma_secundaria_id');
+        return $this->belongsTo(Arma::class, 'id_arma_secundaria');
     }
 
     // Relacionamento com a mochila
