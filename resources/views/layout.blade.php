@@ -21,7 +21,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownCadastrar">
             <a class="dropdown-item" href="{{route('home')}}">Personagens</a>
-            <a class="dropdown-item" href="#">Armas</a>
+            <a class="dropdown-item" href="{{route('arma.cadastro')}}">Armas</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -31,7 +31,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownVisualizar">
             <a class="dropdown-item" href="{{route('personagem.listar')}}">Personagens</a>
-            <a class="dropdown-item" href="#">Armas</a>
+            <a class="dropdown-item" href="{{route('arma.listar')}}">Armas</a>
           </div>
         </li>
     </div>
@@ -40,6 +40,10 @@
     @yield('personagemCadastrar')
     @yield('personagemListar')
     @yield('personagemAlterar')
+    @yield('armaCadastrar')
+    @yield('armaListar')
+    @yield('armaAlterar')
+
   </div>
 
   <!-- Adicionando Bootstrap JS e jQuery (necessários para alguns recursos do Bootstrap) -->

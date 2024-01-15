@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background: url({{asset('/assets/img/fundo.png')}}) no-repeat center center fixed;
+        background: url({{asset('/assets/img/fundo.png')}}) no-repeat center center fixed;
         background-size: cover;
         font-family: 'Goudy Bookletter 1911',
         sans-serif;

@@ -134,15 +134,16 @@ class PersonagemController extends Controller
      * 
      * @return Retorna a tela que lista os personagens cadastrados ou em caso de falha
      */
-    public function excluir($id)
-    {
+    public function excluir($id){
         $personagem = Personagem::find($id);
-
-        if ($personagem->save()) {
-            return $this->listar();
-        } else {
-            return view("personagem.cadastro");
+        
+        if($personagem){
+            $personagem->delete();
+            return redirect()->route('personagem.listar');
+        }else{
+            return redirect()->route('home');
         }
+
     }
 
 }

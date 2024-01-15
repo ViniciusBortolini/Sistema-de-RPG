@@ -51,7 +51,7 @@
 
 <script>
     function exclui(id) {
-        if (confirm('Deseja excluir o personagem de id: ' + id + '?')) {
+        if (confirm('Deseja excluir o usuário de id: ' + id + '?')) {
             location.href = '/personagem/excluir/' + id;
         }
     }
